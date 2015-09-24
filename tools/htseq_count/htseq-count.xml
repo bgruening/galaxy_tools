@@ -46,7 +46,7 @@
     #if $samout_conditional.samout:
         --samout=$__new_file_path__/${samoutfile.id}_tmp
     #end if
-    #if $force_sort:
+    #if not $force_sort:
         --order=name
         --format=bam
         name_sorted_alignment.bam
